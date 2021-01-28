@@ -19,19 +19,19 @@ public class DuckMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            this.transform.position += Vector3.forward * speed * Time.deltaTime;
+            this.transform.position += MainCam.transform.forward * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            this.transform.position += Vector3.back * speed * Time.deltaTime;
+            this.transform.position += -MainCam.transform.forward * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            this.transform.position += Vector3.left * speed * Time.deltaTime;
+            this.transform.position += -MainCam.transform.right * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            this.transform.position += Vector3.right * speed * Time.deltaTime;
+            this.transform.position += MainCam.transform.right * speed * Time.deltaTime;
         }
 
     }
