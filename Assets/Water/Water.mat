@@ -69,11 +69,11 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Foam: 8.13
+    - _Foam: 5
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Height: 0.131
+    - _Height: 0.5
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
