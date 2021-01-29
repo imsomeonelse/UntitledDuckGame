@@ -13,7 +13,7 @@ public abstract class OnTVarChanged<T> : MonoBehaviour
 
     protected void OnEnable()
     {
-        if (_TObj != null)
+        if (_TObj == null)
         {
             return;
         }
@@ -36,9 +36,8 @@ public abstract class OnTVarChanged<T> : MonoBehaviour
         _TObj.Observers -= TriggerActions;
     }
 
-    private void TriggerActions(T val)
+    public void TriggerActions(T val)
     {
-        Debug.Log("entro al TriggerActions");
         Actions.Invoke(val);
     }
 }

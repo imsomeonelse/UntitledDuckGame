@@ -14,8 +14,8 @@ public class testingandy : MonoBehaviour
         }
     }
 
-    public void Test(int v)
-    {
-        Debug.Log(v);
-    }
+    // public void Test(int v)
+    // {
+    //     Debug.Log(v);
+    // }
 }

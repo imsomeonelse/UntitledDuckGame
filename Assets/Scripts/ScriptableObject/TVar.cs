@@ -3,8 +3,12 @@ using System;
 using UnityEngine.Events;
 
 [System.Serializable]
-public abstract class TVar<T> : ScriptableObject
+public abstract class TVar<T> : ScriptableObject, ISerializationCallbackReceiver
 {
+
+    [SerializeField]
+    private T _initialValue;
+
     [SerializeField]
     private T _value;
 
@@ -22,7 +26,16 @@ public abstract class TVar<T> : ScriptableObject
 
     public void NotifyObservers()
     {
-        Debug.Log("Entro al NotifyObserver");
         Observers?.Invoke(_value);
     }
+
+    public void OnAfterDeserialize()
+    {
+        _value = _initialValue;
+    }
+
+    public void OnBeforeSerialize()
+    {
+    }
+
 }

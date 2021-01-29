@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class CameraSwitcher : MonoBehaviour
 {
-    private int _CurrentCam = 0;
-
     [SerializeField]
+    private TVar<int> _CurrentCam;
+
     private CinemachineVirtualCamera[] _Cameras;
 
     private void Start()
@@ -41,15 +41,15 @@ public class CameraSwitcher : MonoBehaviour
 
     public void RightCam()
     {
-        _Cameras[_CurrentCam].gameObject.SetActive(false);
-        _CurrentCam = (_CurrentCam - 1 + 4) % 4;
-        _Cameras[_CurrentCam].gameObject.SetActive(true);
+        _Cameras[_CurrentCam.Value].gameObject.SetActive(false);
+        _CurrentCam.Value = (_CurrentCam.Value - 1 + 4) % 4;
+        _Cameras[_CurrentCam.Value].gameObject.SetActive(true);
     }
 
     public void LeftCam()
     {
-        _Cameras[_CurrentCam].gameObject.SetActive(false);
-        _CurrentCam = (_CurrentCam + 1) % 4;
-        _Cameras[_CurrentCam].gameObject.SetActive(true);
+        _Cameras[_CurrentCam.Value].gameObject.SetActive(false);
+        _CurrentCam.Value = (_CurrentCam.Value + 1) % 4;
+        _Cameras[_CurrentCam.Value].gameObject.SetActive(true);
     }
 }
