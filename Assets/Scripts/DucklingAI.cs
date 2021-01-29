@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Duckling : MonoBehaviour
+public class DucklingAI : MonoBehaviour
 {
     
     public GameObject targetDuckling;
