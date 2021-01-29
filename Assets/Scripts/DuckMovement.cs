@@ -23,7 +23,7 @@ public class DuckMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.S))
         {
-            this.transform.position += -MainCam.transform.forward * speed * Time.deltaTime;
+            this.transform.position += new Vector3(-MainCam.transform.forward.x, 0, -MainCam.transform.forward.z) * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.A))
         {

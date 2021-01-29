@@ -21,8 +21,6 @@ public class CameraSwitcher : MonoBehaviour
 
         // Enable the first one
         _Cameras[0].gameObject.SetActive(true);
-
-        Debug.Log(-1 % 3);
     }
 
 
