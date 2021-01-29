@@ -11,6 +11,8 @@ public class MoveInteractor : MonoBehaviour
     Rigidbody rb;
     [SerializeField]
     float moveSpeed;
+
+    public Stack<GameObject> ducklingStack = new Stack<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
