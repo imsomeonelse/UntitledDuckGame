@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &1945742984118795961
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757174692885597788}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3983709686166219738, guid: bfd3ee667736d7e48ba5a83b610d22cd, type: 3}
+--- !u!64 &2184160182217890137
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5498207449107211214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3983709686166219738, guid: bfd3ee667736d7e48ba5a83b610d22cd, type: 3}
 --- !u!1 &8080984854973589699
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +117,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd3ee667736d7e48ba5a83b610d22cd, type: 3}
+--- !u!1 &1757174692885597788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bfd3ee667736d7e48ba5a83b610d22cd, type: 3}
+  m_PrefabInstance: {fileID: 1487266236580344589}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1380755425111102694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bfd3ee667736d7e48ba5a83b610d22cd, type: 3}
@@ -151,6 +184,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd3ee667736d7e48ba5a83b610d22cd, type: 3}
+--- !u!1 &5498207449107211214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bfd3ee667736d7e48ba5a83b610d22cd, type: 3}
+  m_PrefabInstance: {fileID: 4651346891944763039}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5117881551568337268 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bfd3ee667736d7e48ba5a83b610d22cd, type: 3}
