@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WallHider : MonoBehaviour
 {
-
     private enum Direction
     {
         North,
@@ -21,6 +20,9 @@ public class WallHider : MonoBehaviour
 
     [SerializeField]
     Direction _HideDirection;
+
+    [SerializeField]
+    float _DelayDuration = 2f;
 
     private Material[] _OriginalMats;
     private Material[] _InvisibleMats;
@@ -63,11 +65,17 @@ public class WallHider : MonoBehaviour
     {
         if (value == (int)_HideDirection)
         {
-            _Rend.materials = _InvisibleMats;
+            StartCoroutine(ChangeMaterials(_InvisibleMats));
         }
         else
         {
-            _Rend.materials = _OriginalMats;
+            StartCoroutine(ChangeMaterials(_OriginalMats));
         }
+    }
+
+    IEnumerator ChangeMaterials(Material[] mats)
+    {
+        yield return new WaitForSeconds(_DelayDuration);
+        _Rend.materials = mats;
     }
 }
