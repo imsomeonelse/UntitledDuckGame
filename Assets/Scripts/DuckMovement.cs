@@ -4,35 +4,47 @@ using UnityEngine;
 
 public class DuckMovement : MonoBehaviour
 {
-    public float speed = 1.0f;
+    public float speed = 15f;
+    public float turnSmoothTime = 0.1f;
 
-    public Camera MainCam;
+    private float trunSmoothVelocity;
 
-    // Start is called before the first frame update
+    private Transform cam;
+    private Rigidbody body;
+    private Vector3 direction;
+
     void Start()
     {
-        MainCam = Camera.main;
+        cam = Camera.main.transform;
+        body = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+
+        direction = new Vector3(horizontal, 0.0f, vertical).normalized;
+    }
+
+    private void FixedUpdate()
+    {
+        Vector3 moveDir = Vector3.zero;
+        float yVelocity = body.velocity.y;
+
+        if (direction.magnitude >= 0.1f)
         {
-            this.transform.position += MainCam.transform.forward * speed * Time.deltaTime;
+            // Rotation
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref trunSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+            // Movemement
+            moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward * speed;
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            this.transform.position += new Vector3(-MainCam.transform.forward.x, 0, -MainCam.transform.forward.z) * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            this.transform.position += -MainCam.transform.right * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            this.transform.position += MainCam.transform.right * speed * Time.deltaTime;
-        }
+
+        body.velocity = new Vector3(moveDir.x, yVelocity, moveDir.z);
+
 
     }
 }
