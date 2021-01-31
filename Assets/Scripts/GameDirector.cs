@@ -15,7 +15,15 @@ public class GameDirector : MonoBehaviour
         player = GameObject.Find("Player");
         sewerExit = GameObject.Find("SewerExit");
 
-        // Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void FixedUpdate()
