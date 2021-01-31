@@ -20,7 +20,6 @@ public class DucklingAI : MonoBehaviour
     void Start()
     {
         sound = GetComponent<AudioSource>();
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
@@ -61,7 +60,7 @@ public class DucklingAI : MonoBehaviour
                 collisionInfo.gameObject.GetComponent<DuckMovement>().ducklingStack.Push(gameObject);
 
                 sound.Stop();
-                ducksCounter.Value += ducksCounter.Value + 1;
+                ducksCounter.Value = ducksCounter.Value + 1;
             }
         }
     }

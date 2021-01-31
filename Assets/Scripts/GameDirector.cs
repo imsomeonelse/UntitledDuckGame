@@ -14,12 +14,8 @@ public class GameDirector : MonoBehaviour
     {
         player = GameObject.Find("Player");
         sewerExit = GameObject.Find("SewerExit");
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        // Cursor.lockState = CursorLockMode.Locked;
     }
 
     void FixedUpdate()
