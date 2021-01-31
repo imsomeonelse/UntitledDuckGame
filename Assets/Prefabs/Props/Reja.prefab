@@ -86,6 +86,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: reja
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 637e4c64c497d294ab5b81fc4150f9dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 637e4c64c497d294ab5b81fc4150f9dd, type: 3}
 --- !u!4 &8966189246447380218 stripped

@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Recta (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
 --- !u!1 &6267984986820982663 stripped
@@ -241,6 +245,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
       propertyPath: m_Name
       value: Recta (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
@@ -309,6 +317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Recta (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
 --- !u!1 &6267984986287712331 stripped
@@ -375,6 +387,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
       propertyPath: m_Name
       value: Recta (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
@@ -443,6 +459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Recta (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
 --- !u!1 &6267984985672267918 stripped
@@ -509,6 +529,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
       propertyPath: m_Name
       value: Recta
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835ff462596132d4a9de91a3b0f83a54, type: 3}

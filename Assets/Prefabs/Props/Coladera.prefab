@@ -86,6 +86,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coladera
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa327a92c9745f6408bd6951974cd5e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa327a92c9745f6408bd6951974cd5e3, type: 3}
 --- !u!4 &4563169624335207446 stripped

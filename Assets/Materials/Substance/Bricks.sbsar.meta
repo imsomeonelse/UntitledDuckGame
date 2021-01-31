@@ -237,12 +237,18 @@ ScriptedImporter:
     generateAllOutputs: 0
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://GonzalezSue_matBrick\" label=\"\" >\n  <presetinput
-      identifier=\"$outputsize\" uid=\"982327658\" type=\"8\" value=\"9,9\" />\n
-      </sbspreset>\n"
+      identifier=\"$outputsize\" uid=\"982327658\" type=\"8\" value=\"9,9\" />\n 
+      <presetinput identifier=\"$randomseed\" uid=\"1845442360\" type=\"4\" value=\"107\"
+      />\n  <presetinput identifier=\"groutcolor\" uid=\"1395656449\" type=\"3\"
+      value=\"0.924528,0.924528,0.924528,1\" />\n  <presetinput identifier=\"hue\"
+      uid=\"1408559495\" type=\"0\" value=\"0.577\" />\n  <presetinput identifier=\"saturation\"
+      uid=\"1408559493\" type=\"0\" value=\"0.473\" />\n  <presetinput identifier=\"luminosity\"
+      uid=\"1408559515\" type=\"0\" value=\"0.473\" />\n </sbspreset>\n"
     shaderName: Standard
     materialProperties:
       shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
       shaderKeywords: _MAINTEX _METALLICGLOSSMAP _NORMALMAP _OCCLUSIONMAP _PARALLAXMAP
+        _ROUGHNESSMAP
       lightmapFlags: 4
       enableInstancingVariants: 0
       doubleSidedGI: 0
@@ -486,11 +492,11 @@ ScriptedImporter:
         offset: {x: 0, y: 0}
       - name: _EmissionMap
         texture: {instanceID: 0}
-        scale: {x: 1, y: 1}
+        scale: {x: 5, y: 5}
         offset: {x: 0, y: 0}
       - name: _MainTex
         texture: {fileID: 7579038683850319541, guid: d761718df9363d84782f7b4754852d17, type: 3}
-        scale: {x: 1, y: 1}
+        scale: {x: 5, y: 5}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
         texture: {fileID: -3893968398004303075, guid: d761718df9363d84782f7b4754852d17, type: 3}

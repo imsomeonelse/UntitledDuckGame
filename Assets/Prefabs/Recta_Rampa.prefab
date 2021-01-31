@@ -119,6 +119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: recta_rampa (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a8a06ccd1505f4a44b9acd79259d31f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8a06ccd1505f4a44b9acd79259d31f6, type: 3}
 --- !u!1 &4463904815133079146 stripped
@@ -185,6 +189,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a8a06ccd1505f4a44b9acd79259d31f6, type: 3}
       propertyPath: m_Name
       value: recta_rampa
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a8a06ccd1505f4a44b9acd79259d31f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8a06ccd1505f4a44b9acd79259d31f6, type: 3}

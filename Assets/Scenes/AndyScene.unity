@@ -8502,7 +8502,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.02416341, g: 0.025049735, b: 0.028301895, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -8954,6 +8954,26 @@ PrefabInstance:
       propertyPath: m_CookingOptions
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 5619550408211274075, guid: 2b997381b436e504b8995a340636099d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 1110839451922598962, guid: d761718df9363d84782f7b4754852d17, type: 3}
+    - target: {fileID: 5619550408473530230, guid: 2b997381b436e504b8995a340636099d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 1110839451922598962, guid: d761718df9363d84782f7b4754852d17, type: 3}
+    - target: {fileID: 5619550409210041938, guid: 2b997381b436e504b8995a340636099d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 1110839451922598962, guid: d761718df9363d84782f7b4754852d17, type: 3}
+    - target: {fileID: 5619550409210041938, guid: 2b997381b436e504b8995a340636099d, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65ca655bfc37cfc4f9d6450bfc3348ef, type: 2}
+    - target: {fileID: 5619550409766373790, guid: 2b997381b436e504b8995a340636099d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 1110839451922598962, guid: d761718df9363d84782f7b4754852d17, type: 3}
     - target: {fileID: 6267984986887214310, guid: 2b997381b436e504b8995a340636099d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0

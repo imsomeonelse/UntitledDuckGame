@@ -119,6 +119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: recta_cascada (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5071e93784fbef14cb81613199840e36, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5071e93784fbef14cb81613199840e36, type: 3}
 --- !u!1 &939077176430074764 stripped
@@ -185,6 +189,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5071e93784fbef14cb81613199840e36, type: 3}
       propertyPath: m_Name
       value: recta_cascada
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5071e93784fbef14cb81613199840e36, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5071e93784fbef14cb81613199840e36, type: 3}

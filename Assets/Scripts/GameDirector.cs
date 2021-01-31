@@ -19,13 +19,14 @@ public class GameDirector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void FixedUpdate()
     {
         currentBrothers = player.GetComponent<DuckMovement>().ducklingStack.Count;
-        if (currentBrothers == brothersToWin) {
+        if (currentBrothers == brothersToWin)
+        {
             Destroy(sewerExit);
         }
     }

@@ -3,7 +3,12 @@ guid: 50e1479233181214a9c824dd3fd5b04c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pared
+    second: {fileID: 2100000, guid: 65ca655bfc37cfc4f9d6450bfc3348ef, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -85,7 +90,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.59999996
+    globalScale: 60
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

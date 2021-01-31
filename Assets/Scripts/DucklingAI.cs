@@ -4,22 +4,28 @@ using UnityEngine;
 
 public class DucklingAI : MonoBehaviour
 {
-    
+
     public GameObject targetDuckling;
     private Vector3 targetPosition;
     private bool isFound = false;
     public int steps = 1;
 
-    
+    private AudioSource sound;
+
+
     private float speed = 10.0f;
+
+    public TVar<int> ducksCounter;
+
     void Start()
     {
-
+        sound = GetComponent<AudioSource>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
     {
-        
+
 
     }
     void FixedUpdate()
@@ -38,7 +44,8 @@ public class DucklingAI : MonoBehaviour
     void OnCollisionEnter(Collision collisionInfo)
     {
 
-        if (!isFound) {
+        if (!isFound)
+        {
             if (collisionInfo.collider.name == "Player")
             {
                 print("Detected collision between " + gameObject.name + " and " + collisionInfo.collider.name);
@@ -52,6 +59,9 @@ public class DucklingAI : MonoBehaviour
                 }
                 isFound = true;
                 collisionInfo.gameObject.GetComponent<DuckMovement>().ducklingStack.Push(gameObject);
+
+                sound.Stop();
+                ducksCounter.Value += ducksCounter.Value + 1;
             }
         }
     }

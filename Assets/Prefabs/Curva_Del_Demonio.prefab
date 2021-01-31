@@ -115,6 +115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: curva_interna
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 692c7f79b36ab0a48847d8d0eb3c3127, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 692c7f79b36ab0a48847d8d0eb3c3127, type: 3}
 --- !u!1 &6410944866879121529 stripped
@@ -181,6 +185,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 611bdded2cc402749b73f45214d02b82, type: 3}
       propertyPath: m_Name
       value: curva_extrena
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 611bdded2cc402749b73f45214d02b82, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 611bdded2cc402749b73f45214d02b82, type: 3}
