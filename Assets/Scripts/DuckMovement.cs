@@ -13,6 +13,8 @@ public class DuckMovement : MonoBehaviour
     private Rigidbody body;
     private Vector3 direction;
 
+    public Stack<GameObject> ducklingStack = new Stack<GameObject>();
+
     void Start()
     {
         cam = Camera.main.transform;

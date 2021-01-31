@@ -24,7 +24,7 @@ public class GameDirector : MonoBehaviour
 
     void FixedUpdate()
     {
-        currentBrothers = player.GetComponent<MoveInteractor>().ducklingStack.Count;
+        currentBrothers = player.GetComponent<DuckMovement>().ducklingStack.Count;
         if (currentBrothers == brothersToWin) {
             Destroy(sewerExit);
         }

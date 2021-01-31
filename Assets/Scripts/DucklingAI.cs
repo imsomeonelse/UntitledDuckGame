@@ -11,7 +11,7 @@ public class DucklingAI : MonoBehaviour
     public int steps = 1;
 
     
-    private float speed = 9.0f;
+    private float speed = 10.0f;
     void Start()
     {
 
@@ -28,9 +28,9 @@ public class DucklingAI : MonoBehaviour
         {
             transform.LookAt(targetDuckling.transform);
             targetPosition = new Vector3(targetDuckling.transform.position.x, transform.position.y, targetDuckling.transform.position.z);
-            float targetRad = targetDuckling.GetComponent<SphereCollider>().radius;
+            float targetRad = targetDuckling.GetComponent<CapsuleCollider>().radius;
             float targetDistance = Vector3.Distance(targetPosition, transform.position);
-            float length = targetDistance - (2.0f * targetRad);
+            float length = targetDistance - (9.0f * targetRad);
             transform.Translate(transform.forward * length, Space.World);
         }
     }
@@ -42,16 +42,16 @@ public class DucklingAI : MonoBehaviour
             if (collisionInfo.collider.name == "Player")
             {
                 print("Detected collision between " + gameObject.name + " and " + collisionInfo.collider.name);
-                if (collisionInfo.gameObject.GetComponent<MoveInteractor>().ducklingStack.Count == 0)
+                if (collisionInfo.gameObject.GetComponent<DuckMovement>().ducklingStack.Count == 0)
                 {
                     targetDuckling = collisionInfo.gameObject;
                 }
                 else
                 {
-                    targetDuckling = collisionInfo.gameObject.GetComponent<MoveInteractor>().ducklingStack.Peek();
+                    targetDuckling = collisionInfo.gameObject.GetComponent<DuckMovement>().ducklingStack.Peek();
                 }
                 isFound = true;
-                collisionInfo.gameObject.GetComponent<MoveInteractor>().ducklingStack.Push(gameObject);
+                collisionInfo.gameObject.GetComponent<DuckMovement>().ducklingStack.Push(gameObject);
             }
         }
     }
